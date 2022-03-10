@@ -5,13 +5,14 @@ import Header from './Header';
 import './index.css';
 import Posts from './Posts';
 import PostCards from './PostCards';
-
+import Form from './Form';
 ReactDOM.render(
   <div>
     <Header />
+    {/* <PostCards />
     <PostCards />
-    <PostCards />
-    <App />
+    <App /> */}
+    <Form />
   </div>,
   document.getElementById('root')
 );

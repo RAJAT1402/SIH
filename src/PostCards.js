@@ -4,40 +4,40 @@ import React,{useContext} from 'react';
 // import {PostContext} from "../../contextStore/PostContext";
 import "./PostCards.css"
 
-function PostCards({product,index}) {
+function PostCards() {
 
     // let {setPostContent} = useContext(PostContext)//at the time of onClick on post ,the specified post item assigned to postContent by setPostContent function and it will be stored in a global context PostContext
     // const history=useHistory()//at the time of onClick on post , we want redirect to the view post page
 
     return (
-      <div className="card" key={index} >
-        <div className="image">
-          <img src={product.url} alt="" />
-        </div>
-        <div className="content">
-          <p className="rate">&#x20B9; {product.price}</p>
-          <span className="category"> {product.category} </span>
-          <p className="name"> {product.name}</p>
-        </div>
-        <div className="date">
-          <span>{product.createdAt}</span>
-        </div>
-      </div>
-      
-      
-      // <div className="card">
+      // <div className="card" key={index} >
       //   <div className="image">
-      //     <img src="./tractor1.jfif" alt="image not" />
+      //     <img src={product.url} alt="" />
       //   </div>
       //   <div className="content">
-      //     <p className="rate">&#x20B9; 1001</p>
-      //     <span className="category"> Tractor </span>
-      //     <p className="name"> trctor101</p>
+      //     <p className="rate">&#x20B9; {product.price}</p>
+      //     <span className="category"> {product.category} </span>
+      //     <p className="name"> {product.name}</p>
       //   </div>
       //   <div className="date">
-      //     <span>25.2.22</span>
+      //     <span>{product.createdAt}</span>
       //   </div>
       // </div>
+      
+      
+      <div className="card">
+        <div className="image">
+          <img src="./tractor1.jfif" alt="image not" />
+        </div>
+        <div className="content">
+          <p className="rate">&#x20B9; 1001</p>
+          <span className="category"> Tractor </span>
+          <p className="name"> trctor101</p>
+        </div>
+        <div className="date">
+          <span>25.2.22</span>
+        </div>
+      </div>
     )
 }
 
